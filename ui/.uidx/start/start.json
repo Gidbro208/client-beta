@@ -1,0 +1,245 @@
+/* -------------------------------------------
+|  @ChixutyDevStuff. All rights reserved.     |
+|  You are not allowed to use or modify this  |
+|  file without owner permission              |
+---------------------------------------------*/
+
+{ 
+"namespace": "start_uidx_screen", 
+
+"gamerpic": {
+"type": "image",
+"size": [ 22, 22 ],
+"offset": [ 200, 0 ],
+"layer": 3,
+"bindings": [
+{
+"binding_name": "#gamerpic_texture_path",
+"binding_name_override": "#texture"
+},
+{
+"binding_name": "#gamerpic_texture_location_type",
+"binding_name_override": "#texture_file_system"
+}
+]
+},
+
+"top_panel": { 
+"type": "panel", 
+"size": [ "100%", "100%" ], 
+"offset": [ 0, 0 ], 
+"controls": [ 
+{ 
+"settings@settings": {} 
+},
+{ 
+"profile@profile": {} 
+},
+{
+"achievements_button@achievements_button": { 
+} 
+},
+
+{
+"tag_panel@tag_panel": {} 
+},
+{
+"gamerpic@gamerpic":{}
+}
+]
+},
+
+
+"achievements_button@main_button": { 
+"$pressed_button_name": "button.menu_achievements",
+"$button_text": "menu.achievements" 
+}, 
+
+"profile@main_button": { 
+"$pressed_button_name": "button.to_profile_screen", 
+"$button_text": "profileScreen.header", 
+"offset": [ 125, 0 ], 
+"$button_tts_header": "accessibility.start.profile" 
+}, 
+
+"settings@main_button": { 
+"$pressed_button_name": "button.menu_settings", 
+"$button_text": "menu.settings", 
+"offset": [ -125, 0 ] 
+}, 
+
+
+
+"main_button2@exit_buttons.green_button2": {},
+"main_button@start_buttons.green_button": {},
+
+"play@main_button": { 
+"$pressed_button_name": "button.menu_play", 
+"$button_text": "menu.play" 
+}, 
+
+"store@main_button": { 
+"$pressed_button_name": "button.menu_store", 
+"$button_text": "menu.store", 
+"anchor_from": "top_middle", 
+"anchor_to": "top_middle", 
+"offset": [ 0, 0 ] 
+}, 
+
+"exit@main_button2": { 
+"$button_text": "gui.exit",
+"anchor_from":"bottom_middle",
+"anchor_to": "bottom_middle",
+"offset": [ 0 , -18 ],
+"$pressed_button_name": "button.menu_exit"
+}, 
+
+"spacer_panel": { 
+"type": "panel", 
+"size": [ "100%", 5 ] 
+}, 
+
+"middle_panel": { 
+"type": "panel", 
+"controls": [ 
+{ 
+"main_menu_panel_content": { 
+"type": "stack_panel", 
+"anchor_from": "center", 
+"anchor_to": "center", 
+"size": [ "100%", "100%" ], 
+"offset": [ 8, 15 ], 
+"orientation": "horizontal", 
+"controls": [ 
+{
+"main_buttons_panel_center": {
+"type": "panel", 
+"size": [ "100%", "100%" ], 
+"controls": [
+{ 
+"main_buttons_panel@main_buttons_panel": {} 
+}, 
+{ 
+"title_image@title_image": {} 
+
+}
+] 
+} 
+}
+] 
+} 
+} 
+] 
+}, 
+"main_buttons_panel": { 
+"type": "stack_panel", 
+"anchor_from": "center", 
+"anchor_to": "center", 
+"size": [ 125, "default" ], 
+"offset": [  0,  0 ], 
+"controls": [ 
+{ 
+"play@play": {} 
+}, 
+{ 
+"spacer_1@spacer_panel": {} 
+}, 
+{ 
+"store@store": { 
+"enabled": "($not_store_disabled)" 
+} 
+},
+{ 
+"spacer_1@spacer_panel": {} 
+}, 
+{
+"exit@exit":{}
+}
+] 
+}, 
+
+
+"bottom_panel": { 
+"type": "panel", 
+"size": [ "100%", "100%" ], 
+"offset": [ 0, 0 ], 
+"controls": [ 
+{ 
+"version@version": {} 
+}, 
+{ 
+"client_version@client_version": {} 
+}
+] 
+}, 
+
+"version": { 
+"type": "label", 
+"layer": 2, 
+"text": "#version", 
+"size": [ "default", 20 ], 
+"offset": [ 0, 2 ], 
+"max_size": [ "100%", "100%" ], 
+"anchor_from": "bottom_right", 
+"anchor_to": "bottom_right", 
+"bindings": [ 
+{ 
+"binding_name": "#version" 
+} 
+] 
+}, 
+"client_version": { 
+"type": "label", 
+"layer": 2,
+"text": "TurtleClient [Optimizer]", 
+"size": [ "default", 20 ], 
+"offset": [ 0, 0], 
+"max_size": [ "100%", "100%" ], 
+"anchor_from": "bottom_left", 
+"anchor_to": "bottom_left", 
+"bindings": [ 
+{ 
+"binding_name": "#client_version" 
+} 
+] 
+}, 
+"tag_panel": {
+"type": "input_panel", 
+"anchor_from": "center", 
+"anchor_to": "center", 
+"size": [ "100%", "100% - 24px" ], 
+"offset": [ 0, 75], 
+"controls": [
+{
+"name_tag": { 
+"type": "custom", 
+"renderer": "name_tag_renderer", 
+"layer": 2, 
+"anchor_from": "center", 
+"anchor_to": "center", 
+"size": [ 8, 8 ], 
+"bindings": [ 
+{ 
+"binding_name": "#playername" 
+} 
+]
+} 
+},
+{
+"welcome":{
+"type": "label",
+"font_size": "large",
+"text":"xbox.signin.newaccount.welcome",
+"offset": [ 0 , -15 ]
+}
+}
+] 
+}, 
+
+
+"content@base_screen.root_screen": { 
+"$top_content": "start_uidx_screen.top_panel", 
+"$middle_content": "start_uidx_screen.middle_panel", 
+"$bottom_content": "start_uidx_screen.bottom_panel" 
+} 
+}

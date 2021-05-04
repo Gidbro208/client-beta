@@ -1,0 +1,334 @@
+{ "namespace":"video",
+
+"video_button@settings_common.section_toggle_base": {
+"$toggle_view_binding_name": "video_button_toggle",
+"$glyph_texture": "textures/ui/video_glyph",
+"$glyph_color_texture": "textures/ui/video_glyph_color",
+"$glyph_size": [ 15, 12 ],
+"$button_text": "video.settings",
+"$toggle_property_bag": {
+"#panel_title": "video.settings"
+}
+},
+
+
+
+"video_section": {
+"type": "stack_panel",
+"size": [ "100%", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"$education_ios": "($education_edition and $ios)",
+"bindings": [
+{
+"binding_type": "view",
+"source_control_name": "video_button_toggle",
+"source_property_name": "#toggle_state",
+"target_property_name": "#visible"
+}
+],
+"controls": [
+{
+"brightness_slider@settings_common.option_slider": {
+"$option_label": "#gamma_slider_label",
+"$slider_name": "gamma",
+"$slider_value_binding_name": "#gamma",
+"$slider_tts_text_value": "#gamma_text_value",
+"$option_enabled_binding_name": "#gamma_enabled",
+"$focus_override_up": "FOCUS_OVERRIDE_STOP",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+
+{
+"perspective_dropdown@settings_common.option_dropdown": {
+"$option_label": "options.thirdperson",
+"$dropdown_content": "general_section.third_person_dropdown_content",
+"$dropdown_area": "content_area",
+"$dropdown_name": "third_person_dropdown",
+"$option_enabled_binding_name": "#third_person_dropdown_enabled",
+"$options_dropdown_toggle_label_binding": "#third_person_dropdown_toggle_label",
+"$dropdown_scroll_content_size": [ "100%", "200%" ]
+}
+},
+{
+"outline_selection_toggle@settings_common.option_toggle": {
+"$option_label": "options.classic_box_selection",
+"$option_binding_name": "#classic_box_selection",
+"$option_enabled_binding_name": "#classic_box_selection_enabled",
+"$toggle_name": "classic_box_selection"
+}
+},
+{
+"player_names_toggle@settings_common.option_toggle": {
+"$option_label": "options.ingamePlayerNames",
+"$option_binding_name": "#ingame_player_names",
+"$option_enabled_binding_name": "#ingame_player_names_enabled",
+"$toggle_name": "ingame_player_names"
+}
+},
+{
+"view_bobbing@settings_common.option_toggle": {
+"$option_label": "options.viewBobbing",
+"$option_binding_name": "#view_bobbing",
+"$option_enabled_binding_name": "#view_bobbing_enabled",
+"$toggle_name": "view_bobbing"
+}
+},
+{
+"camera_shake_toggle@settings_common.option_toggle": {
+"$option_label": "options.screenShake",
+"$option_binding_name": "#camera_shake",
+"$option_enabled_binding_name": "#camera_shake_enabled",
+"$toggle_name": "camera_shake"
+}
+},
+{
+"fancy_leaves_toggle@settings_common.option_toggle": {
+"$option_label": "options.transparentleaves",
+"$option_binding_name": "#transparent_leaves",
+"$option_enabled_binding_name": "#transparent_leaves_enabled",
+"$toggle_name": "transparent_leaves"
+}
+},
+{
+"fancy_bubbles_toggle@settings_common.option_toggle": {
+"$option_label": "options.bubbleparticles",
+"$option_binding_name": "#bubble_particles",
+"$option_enabled_binding_name": "#bubble_particles_enabled",
+"$toggle_name": "bubble_particles"
+}
+},
+{
+"render_clouds_toggle@settings_common.option_toggle": {
+"$option_label": "options.renderclouds",
+"$option_binding_name": "#render_clouds",
+"$option_enabled_binding_name": "#render_clouds_enabled",
+"$toggle_name": "render_clouds"
+}
+},
+{
+"fancy_clouds_toggle@settings_common.option_toggle": {
+"$option_label": "options.fancyskies",
+"$option_binding_name": "#fancy_skies",
+"$option_enabled_binding_name": "#fancy_skies_enabled",
+"$toggle_name": "fancy_skies"
+}
+},
+{
+"smooth_lighting_toggle@settings_common.option_toggle": {
+"$option_label": "options.smooth_lighting",
+"$option_binding_name": "#smooth_lighting",
+"$option_enabled_binding_name": "#smooth_lighting_enabled",
+"$toggle_name": "smooth_lighting"
+}
+},
+{
+"graphics_toggle@settings_common.option_toggle": {
+"$option_label": "options.graphics",
+"$option_binding_name": "#graphics_toggle",
+"$option_enabled_binding_name": "#graphics_toggle_enabled",
+"$toggle_name": "graphics_toggle"
+}
+},
+{
+"rendering_profile_option_slider@settings_common.option_slider": {
+"$option_label": "#rendering_profile_slider_label",
+"$slider_name": "rendering_profile",
+"$slider_value_binding_name": "#rendering_profile",
+"$slider_tts_text_value": "#rendering_profile_text_value",
+"$option_enabled_binding_name": "#rendering_profile_slider_enabled",
+"$slider_steps_binding_name": "#rendering_profile_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+{
+"field_of_view_toggle@settings_common.option_toggle": {
+"$option_label": "options.fov.toggle",
+"$option_binding_name": "#field_of_view_toggle",
+"$option_enabled_binding_name": "#field_of_view_toggle_enabled",
+"$toggle_name": "field_of_view_toggle"
+}
+},
+{
+"super_fancy_panel": {
+"type": "panel",
+"size": [ "100%", "100%c + 4px" ],
+"controls": [
+{
+"super_fancy_section": {
+"type": "image",
+"anchor_from": "top_middle",
+"anchor_to": "top_middle",
+"size": [ "100% - 4px", "100%c + 6px" ],
+"texture": "textures/ui/mainbanners",
+"controls": [
+{
+"super_fancy_contents": {
+"type": "stack_panel",
+"size": [ "100% - 6px", "100%c - 4px" ],
+"controls": [
+{
+"atmospherics_toggle@settings_common.option_toggle": {
+"$option_label": "options.atmosphericsEnable",
+"$option_binding_name": "#atmospherics",
+"$option_enabled_binding_name": "#atmospherics_enabled",
+"$toggle_name": "atmospherics"
+}
+},
+{
+"edge_highlight_toggle@settings_common.option_toggle": {
+"$option_label": "options.edgeHighlightEnable",
+"$option_binding_name": "#edge_highlight",
+"$option_enabled_binding_name": "#edge_highlight_enabled",
+"$toggle_name": "edge_highlight"
+}
+},
+{
+"bloom_toggle@settings_common.option_toggle": {
+"$option_label": "options.bloomEnable",
+"$option_binding_name": "#bloom",
+"$option_enabled_binding_name": "#bloom_enabled",
+"$toggle_name": "bloom"
+}
+},
+{
+"terrain_shadows_toggle@settings_common.option_toggle": {
+"$option_label": "options.terrainShadowsEnable",
+"$option_binding_name": "#terrain_shadows",
+"$option_enabled_binding_name": "#terrain_shadows_enabled",
+"$toggle_name": "terrain_shadows"
+}
+},
+{
+"super_fancy_water_toggle@settings_common.option_toggle": {
+"$option_label": "options.superFancyWaterEnable",
+"$option_binding_name": "#super_fancy_water",
+"$option_enabled_binding_name": "#super_fancy_water_enabled",
+"$toggle_name": "super_fancy_water"
+}
+}
+]
+}
+}
+]
+}
+}
+]
+}
+},
+{
+"upscaling_toggle@settings_common.option_toggle": {
+"$option_label": "options.upscaling",
+"$option_binding_name": "#graphics_upscaling",
+"$option_enabled_binding_name": "#graphics_upscaling_enabled",
+"$toggle_name": "graphics_upscaling",
+"controls": [
+{
+"rtx_disabled_option_upsell@general_section.rtx_disabled_option_upsell": {
+"$rtx_disabled_option_upsell_visible": "#rtx_upscale_disabled_option_upsell_visible",
+"$rtx_disabled_option_is_hovered_button_event": "button.rtx_upscale_disabled_option_is_hovered",
+"$rtx_disabled_option_upsell_tooltip_visible": "#rtx_upscale_disabled_option_upsell_tooltip_visible"
+}
+},
+{ "option_generic_core@settings_common.option_generic_core": {} }
+]
+}
+},
+{
+"raytracing_toggle@settings_common.option_toggle": {
+"$option_label": "options.raytracing",
+"$option_binding_name": "#raytracing",
+"$option_enabled_binding_name": "#raytracing_enabled",
+"$toggle_name": "raytracing",
+"controls": [
+{ "rtx_disabled_option_upsell@general_section.rtx_disabled_option_upsell": {} },
+{ "option_generic_core@settings_common.option_generic_core": {} }
+]
+}
+},
+{
+"raytracing_render_distance_slider@settings_common.option_slider": {
+"$option_label": "#raytracing_render_distance_slider_label",
+"$slider_name": "raytracing_render_distance",
+"$slider_value_binding_name": "#raytracing_render_distance",
+"$slider_tts_text_value": "#raytracing_render_distance_text_value",
+"$option_enabled_binding_name": "#raytracing_render_distance_enabled",
+"$slider_steps_binding_name": "#raytracing_render_distance_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+],
+"controls": [
+{ "rtx_render_distance_warning@general_section.rtx_render_distance_warning": {} },
+{ "option_generic_core@settings_common.option_generic_core": {} }
+],
+"bindings": [
+{
+"binding_name": "#show_raytracing_render_distance",
+"binding_name_override": "#visible"
+}
+]
+}
+},
+{
+"render_distance_slider@settings_common.option_slider": {
+"$option_label": "#render_distance_slider_label",
+"$slider_name": "render_distance",
+"$slider_value_binding_name": "#render_distance",
+"$slider_tts_text_value": "#render_distance_text_value",
+"$option_enabled_binding_name": "#render_distance_enabled",
+"$slider_steps_binding_name": "#render_distance_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+],
+"bindings": [
+{
+"binding_name": "#show_render_distance",
+"binding_name_override": "#visible"
+}
+]
+}
+},
+{
+"max_framerate_slider@settings_common.option_slider": {
+"$option_label": "#max_framerate_slider_label",
+"$slider_name": "max_framerate",
+"$slider_value_binding_name": "#max_framerate",
+"$slider_tts_text_value": "#max_framerate_text_value",
+"$option_enabled_binding_name": "#max_framerate_enabled",
+"$slider_steps_binding_name": "#max_framerate_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+{
+"texel_anti_aliasing_toggle@settings_common.option_toggle": {
+"$option_label": "options.texelAA",
+"$option_binding_name": "#texel_aa",
+"$option_enabled_binding_name": "#texel_aa_enabled",
+"$toggle_name": "texel_aa",
+"bindings": [
+{
+"binding_name": "#show_texel_aa"
+}
+]
+}
+}
+]
+}
+}

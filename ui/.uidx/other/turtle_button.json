@@ -1,0 +1,67 @@
+/* -------------------------------------------
+|  @ChixutyDevStuff. All rights reserved.     |
+|  You are not allowed to use or modify this  |
+|  file without owner permission              |
+---------------------------------------------*/
+
+
+{ 
+"namespace": "pausett", 
+
+"toggle_label": {
+"type": "label",
+"layer": 4,
+"text": "$t_text"
+},
+"toggle_image": {
+"type": "image",
+"$default|default": false,
+"$hover|default": false,
+"$pressed|default": false,
+"controls": [
+{
+"@pausett.toggle_label": {}
+}
+]
+},
+
+"toggle_unchecked@pausett.toggle_image": {
+"$default|default": true,
+"texture": "textures/ui/button_borderless_lighthover",
+"$t_text": "$show_text"
+},
+"toggle_checked@pausett.toggle_image": {
+"$pressed|default": true,
+"texture": "textures/ui/button_red",
+"$t_text": "$hide_text"
+},
+"toggle_unchecked_hover@pausett.toggle_image": {
+"$hover|default": true,
+"texture": "textures/ui/button_borderless_lighthover",
+"$t_text": "$show_text"
+},
+"toggle_checked_hover@pausett.toggle_image": {
+"$hover|default": true,
+"texture": "textures/ui/button_red",
+"$t_text": "$hide_text"
+},
+
+"button_press_toggle@common.toggle": {
+"$unchecked_control|default": "pausett.toggle_unchecked",
+"$checked_control|default": "pausett.toggle_checked",
+"$unchecked_hover_control|default": "pausett.toggle_unchecked_hover",
+"$checked_hover_control|default": "pausett.toggle_checked_hover"
+ },
+
+"button_toggle": {
+"type": "panel",
+"layer": 3,
+"$toggle_view_binding_name|default": "this_toggle",
+"$template_toggle|default": "pausett.button_press_toggle",
+"controls": [
+{
+"$toggle_view_binding_name@$template_toggle": {}
+}
+]
+}
+}

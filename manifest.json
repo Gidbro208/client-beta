@@ -1,0 +1,49 @@
+{ 
+"format_version": 2, 
+"header": {
+"description": "§lMade By §6Chixuty", 
+"name": "§l§aTurtle §bClient §cv5 Beta", 
+"uuid": "ac8159d4-4536-11eb-b378-0242ac130002", 
+"version": [4, 0, 0], 
+"min_engine_version": [1, 16, 0] 
+}, 
+"modules": [ 
+{ 
+"type": "resources", 
+"uuid": "ac815998-4536-11eb-b378-0242ac130002", 
+"version": [4, 0, 0] 
+} 
+],
+"subpacks" :[
+{
+"folder_name":"onechunk",
+"name":"One Chunk Render Distance",
+"memory_tier":1
+},
+{
+"folder_name":"realisticcape",
+"name":"RealisticCape",
+"memory_tier":1
+},
+{
+"folder_name":"tnt",
+"name":"Animated TnT",
+"memory_tier":1
+},
+{
+"folder_name":"animatedcape",
+"name":"Animated Cape",
+"memory_tier":1
+},
+{
+"folder_name":"noparticles",
+"name":"No Particles",
+"memory_tier":1
+},
+{
+"folder_name":"none",
+"name":"None",
+"memory_tier":1
+}
+]
+}

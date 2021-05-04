@@ -1,0 +1,65 @@
+/* -------------------------------------------
+| @DrAv0011. All rights reserved.            |
+| You are not allowed to use or modify this  |
+| file without owner permission              |
+---------------------------------------------*/
+
+{ 
+"namespace": "trade2", 
+"hover_button": { 
+"type": "button", 
+"layer": 1, 
+"default_focus_precedence": 1, 
+"hover_control": "hover_text", 
+"consume_event": false, 
+"button_mappings": [
+{
+"to_button_id": "button.container_slot_hovered",
+"mapping_type": "pressed", "consume_event": false
+}
+], 
+"controls": [
+{
+"hover_text@common.hover_text": {
+"bindings": [
+{
+"binding_type": "collection_details"
+}, 
+{
+"binding_name": "#hover_text", 
+"binding_condition": "visible"
+}
+]
+}
+}
+], 
+"bindings": [
+{
+"binding_type": "collection_details"
+}
+] 
+}, 
+"trade_icons@trade2.toggle_content": { 
+"layer": 11, 
+"offset": [0, 4], 
+"$template_toggle": "trade2.toggle_content" 
+}, 
+"trade_toggle_holder": { 
+"type": "panel", 
+"size": ["100%", "60%c - 1px"], 
+"controls": [ 
+{
+"trade_toggle@trade2.trade_toggle": {
+"anchor_from": "top_middle",
+"anchor_to": "top_middle"
+}
+}, 
+{
+"trade_icons@trade2.trade_icons": {
+"anchor_from": "top_middle",
+"anchor_to": "top_middle"
+}
+} 
+] 
+} 
+}

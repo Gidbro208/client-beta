@@ -1,0 +1,29 @@
+
+{ 
+"namespace": "load", 
+
+"load": { 
+"type": "image", 
+"texture": "textures/uidx/loading", 
+"size": [ 480, 30 ], 
+"uv_size": [ 48, 30 ], 
+"uv": "@load.animation" 
+}, 
+"save": { 
+"type": "image", 
+"texture": "textures/uidx/loading", 
+"size": [ 480, 30], 
+"uv_size": [ 48, 30 ], 
+"uv": "@load.animation" 
+}, 
+
+
+"animation": { 
+"anim_type": "flip_book", 
+"initial_uv": [ 0, 0 ], 
+"frame_count":10, 
+"frame_step": 0, 
+"fps": 10, 
+"reversible": false
+} 
+}

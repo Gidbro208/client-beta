@@ -1,0 +1,17 @@
+{
+    "version" : 1,
+    "fonts" : [
+      {
+        "font_format": "ttf",
+        "font_name": "MinecraftTen",
+        "version": 1,
+        "font_file": "font/minecraft-ten",
+        "lowPerformanceCompatible": false
+      },
+      {
+        "font_format" : "msdf",
+        "font_name" : "OldSmoothFont",
+        "font_file" : "font/smooth/smooth_"
+      }
+    ]
+}

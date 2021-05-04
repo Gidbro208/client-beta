@@ -1,0 +1,215 @@
+{ "namespace":"interface",
+
+
+"interface_button@settings_common.section_toggle_base": {
+"$toggle_view_binding_name": "flighting_debug_button_toggle",
+"$glyph_texture": "textures/glyphs/view_glyph",
+"$glyph_color_texture": "textures/glyphs/view_glyph_color",
+"$glyph_size": [ 17, 17 ],
+"$button_text": "interface.settings",
+"$toggle_property_bag": {
+"#panel_title": "interface.settings"
+}
+},
+"interface_section": {
+"type": "stack_panel",
+"size": [ "100%", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"bindings": [
+{
+"binding_type": "view",
+"source_control_name": "flighting_debug_button_toggle",
+"source_property_name": "#toggle_state",
+"target_property_name": "#visible"
+}
+],
+"controls": [
+{
+"fov_slider@settings_common.option_slider": {
+"$option_label": "#field_of_view_slider_label",
+"$slider_tts_text_value": "#field_of_view_text_value",
+"$slider_name": "field_of_view",
+"$slider_value_binding_name": "#field_of_view",
+"$option_enabled_binding_name": "#field_of_view_enabled",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+{
+"hud_opacity_slider@settings_common.option_slider": {
+"$option_label": "#interface_opacity_slider_label",
+"$slider_name": "interface_opacity",
+"$slider_value_binding_name": "#interface_opacity",
+"$slider_tts_text_value": "#interface_opacity_text_value",
+"$option_enabled_binding_name": "#interface_opacity_enabled",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+{
+"splitscreen_hud_opacity_slider@settings_common.option_slider": {
+"$option_label": "#splitscreen_interface_opacity_slider_label",
+"$slider_name": "splitscreen_interface_opacity",
+"$slider_value_binding_name": "#splitscreen_interface_opacity",
+"$slider_tts_text_value": "#splitscreen_interface_opacity_text_value",
+"$option_enabled_binding_name": "#splitscreen_interface_opacity_enabled",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},
+{
+"setup_safe_zone": {
+"ignored": "(not $is_pregame)",
+"type": "panel",
+"size": [ "100%", 32 ],
+"controls": [
+{
+"action_button@settings_common.action_button": {
+"$pressed_button_name": "setup_safe_zone_button",
+"$button_text": "options.safeZone.title",
+"anchor_from": "top_right",
+"anchor_to": "top_right"
+}
+}
+]
+}
+},
+{
+
+"fullscreen_toggle@settings_common.option_toggle": {
+"$show_fullscreen_toggle": true,
+"$option_label": "options.fullscreen",
+"$option_binding_name": "#full_screen",
+"$option_enabled_binding_name": "#full_screen_enabled",
+"$toggle_name": "full_screen"
+}
+},
+{ 
+"option_dropdown@settings_common.option_dropdown": { 
+"$option_label": "options.thirdperson", 
+"$dropdown_content": "general_section.third_person_dropdown_content", 
+"$dropdown_area": "content_area", 
+"$dropdown_name": "third_person_dropdown", 
+"$option_enabled_binding_name": "#third_person_dropdown_enabled", 
+"$options_dropdown_toggle_label_binding": "#third_person_dropdown_toggle_label", 
+"$dropdown_scroll_content_size": [ "100%", "200%" ] 
+} 
+}, 
+{
+"option_toggle_screen_animations@settings_common.option_toggle": {
+"$option_label": "options.screenAnimations",
+"$option_binding_name": "#screen_animations",
+"$option_enabled_binding_name": "#screen_animations_enabled",
+"$toggle_name": "screen_animations",
+"bindings": [
+{
+"binding_name": "#screen_animations_visible",
+"binding_name_override": "#visible"
+}
+]
+}
+},
+{
+"split_screen_dropdown@settings_common.option_dropdown": {
+"$option_label": "Split Screen",
+"$dropdown_content": "general_section.split_screen_dropdown_content",
+"$dropdown_area": "content_area",
+"$dropdown_name": "split_screen_dropdown",
+"$option_enabled_binding_name": "#split_screen_dropdown_enabled",
+"$options_dropdown_toggle_label_binding": "#split_screen_dropdown_toggle_label",
+"$dropdown_scroll_content_size": [ "100%", "145%" ]
+}
+},
+{
+"auto_save_icon_toggle@settings_common.option_toggle": {
+"$option_label": "options.showautosaveicon",
+"$option_binding_name": "#show_auto_save_icon",
+"$option_enabled_binding_name": "#show_auto_save_icon_enabled",
+"$toggle_name": "show_auto_save_icon"
+}
+},
+{
+"outline_selection_toggle@settings_common.option_toggle": {
+"$option_label": "options.classic_box_selection",
+"$option_binding_name": "#classic_box_selection",
+"$option_enabled_binding_name": "#classic_box_selection_enabled",
+"$toggle_name": "classic_box_selection"
+}
+},
+{
+"screen_outline_selection@settings_common.option_toggle": {
+"$option_label": "SplitScreen Outline Selection",
+"$option_binding_name": "#vr_classic_box_selection",
+"$option_enabled_binding_name": "#vr_classic_box_selection_enabled",
+"$toggle_name": "vr_classic_box_selection"
+}
+},
+{
+"player_names_toggle@settings_common.option_toggle": {
+"$option_label": "options.ingamePlayerNames",
+"$option_binding_name": "#ingame_player_names",
+"$option_enabled_binding_name": "#ingame_player_names_enabled",
+"$toggle_name": "ingame_player_names"
+}
+},
+{
+"splitscreen_player_names_toggle@settings_common.option_toggle": {
+"$option_label": "options.splitscreenIngamePlayerNames",
+"$option_binding_name": "#splitscreen_ingame_player_names",
+"$option_enabled_binding_name": "#splitscreen_ingame_player_names_enabled",
+"$toggle_name": "splitscreen_ingame_player_names"
+}
+},
+{
+"field_of_view_toggle@settings_common.option_toggle": {
+"$option_label": "options.fov.toggle",
+"$option_binding_name": "#field_of_view_toggle",
+"$option_enabled_binding_name": "#field_of_view_toggle_enabled",
+"$toggle_name": "field_of_view_toggle"
+}
+},
+{
+"ui_profile_dropdown@settings_common.option_dropdown": {
+"$option_label": "options.uiprofile",
+"$dropdown_content": "general_section.ui_profile_dropdown_content",
+"$dropdown_area": "content_area",
+"$dropdown_name": "ui_profile_dropdown",
+"$option_enabled_binding_name": "#ui_profile_dropdown_enabled",
+"$options_dropdown_toggle_label_binding": "#ui_profile_dropdown_toggle_label",
+"$dropdown_scroll_content_size": [ "100%", "145%" ]
+}
+},
+{
+"gui_scale_slider@settings_common.option_slider": {
+"$option_label": "#gui_scale_slider_label",
+"$slider_name": "gui_scale",
+"$slider_value_binding_name": "#gui_scale",
+"$slider_tts_text_value": "#gui_scale_text_value",
+"$option_enabled_binding_name": "#gui_scale_enabled",
+"$slider_steps_binding_name": "#gui_scale_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+],
+"bindings": [
+{
+"binding_name": "#gui_scale_visible",
+"binding_name_override": "#visible"
+}
+]
+}
+}
+]
+}
+}

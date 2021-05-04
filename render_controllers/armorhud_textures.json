@@ -1,0 +1,206 @@
+{
+"format_version":"1.8.0",
+"render_controllers":{
+
+"controller.render.empty_helmet": {
+"rebuild_animation_matrices": true,
+"geometry": "Geometry.casco_geo",
+"materials": [{"*": "Material.default"}],
+"textures": ["Texture.empty_helmet"],
+"is_hurt_color": {},
+"on_fire_color": {}
+},
+
+"controller.render.empty_chestplate": {
+"rebuild_animation_matrices": true,
+"geometry": "Geometry.camisa_geo",
+"materials": [{"*": "Material.default"}],
+"textures": ["Texture.empty_chestplate"],
+"is_hurt_color": {},
+"on_fire_color": {}
+},
+
+"controller.render.empty_leggings": {
+"rebuild_animation_matrices": true,
+"geometry": "Geometry.pantalones_geo",
+"materials": [{"*": "Material.default"}],
+"textures": ["Texture.empty_leggings"],
+"is_hurt_color": {},
+"on_fire_color": {}
+},
+
+"controller.render.empty_boots": {
+"rebuild_animation_matrices": true,
+"geometry": "Geometry.botas_geo",
+"materials": [{"*": "Material.default"}],
+"textures": ["Texture.empty_boots"],
+"is_hurt_color": {},
+"on_fire_color": {}
+},
+//LEATHER ARMOR//
+"controller.render.leather_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.leather_helmet"]
+},
+"controller.render.leather_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.leather_chestplate"]
+},
+"controller.render.leather_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.leather_leggings"]
+},
+"controller.render.leather_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.leather_boots"]
+},
+//CHAINMAIL ARMOR//
+"controller.render.chainmail_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.chainmail_helmet"]
+},
+"controller.render.chainmail_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.chainmail_chestplate"]
+},
+"controller.render.chainmail_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.chainmail_leggings"]
+},
+"controller.render.chainmail_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.chainmail_boots"]
+},
+//IRON ARMOR//
+"controller.render.iron_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.iron_helmet"]
+},
+"controller.render.iron_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials": [ { "*": "Material.default" } ],
+"textures":["Texture.iron_chestplate"]
+},
+"controller.render.iron_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.iron_leggings"]
+},
+"controller.render.iron_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.iron_boots"]
+},
+//GOLD ARMOR//
+"controller.render.gold_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.gold_helmet"]
+},
+"controller.render.gold_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.gold_chestplate"]
+},
+"controller.render.gold_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.gold_leggings"]
+},
+"controller.render.gold_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.gold_boots"]
+},
+
+//DIAMOND ARMOR//
+"controller.render.diamond_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials": [ { "*": "material.default" } ],
+"textures":["Texture.diamond_helmet"]
+},
+"controller.render.diamond_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.diamond_chestplate"]
+},
+"controller.render.diamond_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.diamond_leggings"]
+},
+"controller.render.diamond_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.diamond_boots"]
+},
+//NETHERITE ARMOR//
+"controller.render.netherite_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.netherite_helmet"]
+},
+"controller.render.netherite_chestplate":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.netherite_chestplate"]
+},
+"controller.render.netherite_leggings":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.pantalones_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.netherite_leggings"]
+},
+"controller.render.netherite_boots":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.botas_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.netherite_boots"]
+},
+//ELYTRA AND TURTLE HELMET//
+"controller.render.elytra":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.camisa_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.elytra"]
+},
+
+"controller.render.turtle_helmet":{
+"rebuild_animation_matrices":true,
+"geometry":"Geometry.casco_geo",
+"materials":[{"*":"Material.default"}],
+"textures":["Texture.turtle_helmet"]
+}
+}
+}

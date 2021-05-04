@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "fog:one_chunk"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 5,
+        "fog_end": 10,
+        "fog_color": "#000000",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 5,
+        "fog_end":10,
+        "fog_color": "#000000",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+"vr_3d_rendering@settings_common.option_toggle": {
+
+"$option_label": "options.3DRendering",
+"$option_binding_name": "#vr_3d_rendering",
+"$option_enabled_binding_name": "#vr_3d_rendering_enabled",
+"$toggle_name": "vr_3d_rendering"
+}
+},
+{
+"vr_mirror_texture@settings_common.option_toggle": {
+
+"$option_label": "options.vrMirrorTexture",
+"$option_binding_name": "#vr_mirror_texture",
+"$option_enabled_binding_name": "#vr_mirror_texture_enabled",
+"$toggle_name": "vr_mirror_texture"
+}
+},
+{
+"vr_hand_pointer_visible@settings_common.option_toggle": {
+
+"$option_label": "options.vrHandPointer",
+"$option_binding_name": "#vr_hand_pointer",
+"$option_enabled_binding_name": "#vr_hand_pointer_enabled",
+"$toggle_name": "vr_hand_pointer"
+}
+},
+{
+"vr_hands_visible@settings_common.option_toggle": {
+
+"$option_label": "options.vrHandsVisible",
+"$option_binding_name": "#vr_hands_visible",
+"$option_enabled_binding_name": "#vr_hands_visible_enabled",
+"$toggle_name": "vr_hands_visible"
+}
+},
+{
+"msaa_slider@settings_common.option_slider": {
+
+"$option_label": "#msaa_slider_label",
+"$slider_name": "msaa",
+"$slider_value_binding_name": "#msaa",
+"$slider_tts_text_value": "#msaa_text_value",
+"$option_enabled_binding_name": "#msaa_enabled",
+"$slider_steps_binding_name": "#msaa_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+],
+"bindings": [
+{
+"binding_name": "#show_msaa",
+"binding_name_override": "#visible"
+}
+]
+}
+},
+{
+"vr_msaa_slider@settings_common.option_slider": {
+
+"$option_label": "#vr_msaa_slider_label",
+"$slider_name": "vr_msaa",
+"$slider_value_binding_name": "#vr_msaa",
+"$slider_tts_text_value": "#vr_msaa_text_value",
+"$option_enabled_binding_name": "#vr_msaa_enabled",
+"$slider_steps_binding_name": "#vr_msaa_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+],
+"bindings": [
+{
+"binding_name": "#show_vr_msaa",
+"binding_name_override": "#visible"
+}
+]
+}
+},
+{
+"vr_render_distance_slider@settings_common.option_slider": {
+
+"$option_label": "#vr_render_distance_slider_label",
+"$slider_name": "vr_render_distance",
+"$slider_value_binding_name": "#vr_render_distance",
+"$slider_tts_text_value": "#vr_render_distance_text_value",
+"$option_enabled_binding_name": "#vr_render_distance_enabled",
+"$slider_steps_binding_name": "#vr_render_distance_steps",
+"$label_bindings": [
+{
+"binding_name": "$option_label"
+}
+]
+}
+},

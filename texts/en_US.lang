@@ -1,0 +1,118 @@
+
+
+client.name=§l§aTurtle §bClient
+//Settings Sections//
+
+video.settings=§lVideo Settings
+player.settings=§lPlayer Settings
+interface.settings=§lInterface Settings
+client.features=§lClient Info
+creator.info=§lCreator Info
+packs.section=§lResource Packs
+keyboard.section=§lKeyboard & Mouse
+controller.section=§lController Settings
+touch.section=§lTouch Settings
+profile.section=§lProfile & Settings 
+storage.section=§lStorage
+sound.section=§lSound Settings 
+language.section=§lLanguage
+quick.settings=Quick Settings
+video.section=§lVideo
+mods.section=Mods 
+
+dev.settings=Developer Settings
+
+//Inventory//
+inventory.health=§l§cHealth
+inventory.armor=§l§7Armor
+inventory.hunger=§l§6Hunger
+
+map.position=XYZ : %s , %s , %s
+accessibility.chat.howtoopen=[§l§6Game§r] Successfully Instaled §l§aTurtle§bClient
+options.hidepaperdoll= §lShow Armor Hud
+
+enchantment.level.1= 1
+enchantment.level.10=10
+enchantment.level.2=2
+enchantment.level.3=3
+enchantment.level.4=4
+enchantment.level.5=5
+enchantment.level.6=6
+enchantment.level.7=7
+enchantment.level.8=8
+enchantment.level.9=9
+
+
+mod.label0=§a§lHow To Activate Waypoints
+mod.label1=§6Be In First Person, Have A Dirt Block, Sneak, Then Punck The Ground, Then Move
+mod.label2=§c§lHow To Deactivate Waypoints
+mod.label3=§6Be On Third Person§r (Front Or Back)§6 Have A Dirt Block, Sneak, ThenPunch The Ground, Then Move
+
+
+ccont.1=Features
+cconth.2=§a Turtle §bClient §cv1 & 2
+ccont.3=§e  -Detailed Position Text
+ccont.4=§e  -Added Quickcraft
+ccont.5=§e  -Invisible Inventoy Button 
+ccont.6=§e  -Invisible Item Background
+ccont.7=§e  -25% Opacity D-Pad
+ccont.8=§e  -Better Wool Blocks
+ccont.9=§e  -Full Bright 
+ccont.10=§e  -See Under Lava
+ccont.11=§e  -See Under Water
+ccont.12=§e  -Short Swords
+ccont.13=§e  -Outlined Ores
+ccont.14=§e  -Short Grass
+ccont.15=§e  -Grass Block Side Filled
+ccont.16=§e  -Low Fire
+ccont.17=§e  -Able To See What Villagers Are Going To Sell After
+ccont.18=§e  -Quick Chat
+ccont.19=§e  -No Breaking Particles
+ccont.20=§e  -Better CrossHair
+ccont.21=§e  -Player Render
+ccont.22=§e  -Client Debug Title
+ccont.23=§e  -FPS Improvement
+ccont.24=§e  -Health & Hunger Bars On Pocket Inventory Screen
+ccont.25=§e  -Small Shield
+ccont.26=§e  -Clean Leather Armor
+ccont.27=§e  -Better Menu Panorama
+ccont.28=§e  -Player Render On Chest Screen
+ccont.29=§e  -2d Clouds
+ccont.30=§e  -Better Settings Screen
+cconth.31=§a Turtle §bClient §cv3
+ccont.32=§e  -Toggle Button To Show Player On Pause Screen
+ccont.33=§e  -No Block Breaking Particles
+ccont.34=§e  -No Particles Subpack
+ccont.35=§e  -Dark Ui
+ccont.36=§e  -Better Pause Screen
+ccont.37=§e  -Client Logo On Chest Screen
+ccont.38=§e  -Potion Hud On Chest Screen
+ccont.39=§e  -Renders On Classic Inventory
+ccont.40=§e  -Client Cape
+ccont.41=§e  -Armor Grid On Bottom Left Of Pocket UI
+ccont.42=§e  -Armor Hud At Bottom Right
+cconth.43=§a Turtle§b Client§cv4
+ccont.43=§e  -Compass On Hud Screen 
+ccont.44=§e  -SprintStatus
+ccont.45=§e  -AnimatedCapes
+ccont.46=§e  -3D Block Hitbox
+ccont.47=§e  -Bandana
+ccont.48=§e  -New Gui Texture
+ccont.49=§e  -Type Of ForceCoords
+ccont.50=§e  -Armor Hud Vertically
+ccont.51=§e  -Green Biomes
+ccont.52=§e  -Full Bright Extension
+ccont.53=§e  -New Loading Screen
+ccont.54=§e  -WayPoints
+ccont.55=§e  -Java Hand
+ccont.56=§e  -Type Of Freecam
+ccont.57=§e  -New Breaking Animation
+ccont.58=§e  -Chest Esp Extension
+cconth.59=§a Turtle §bClient §cv5
+ccont.60=§e  -Toggleable Armor Hud
+ccont.61=§e  -Durability For Items Is not Rounded
+ccont.62=§e  -Durability Bar Always Green
+ccont.63=§e  -Smaller Chat Font
+ccont.64=§e  -Desktop Chest Screen When On Pocket
+ccont.65=§e  -1 Chunk Render Distance SubPack
+ccont.66=§e  -Cape Physics SubPack

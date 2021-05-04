@@ -1,0 +1,39 @@
+/* -------------------------------------------
+| @ChixutyDevStuff. All rights reserved.     |
+| You are not allowed to use or modify this  |
+| file without owner permission              |
+| @Ambient. All rights reserved.             |
+---------------------------------------------*/
+{ 
+"format_version": "1.8.0", 
+"render_controllers": { 
+"controller.render.player.cape.custom": { 
+"rebuild_animation_matrices": true, 
+"arrays": { 
+"textures": { 
+"array.capes": [ 
+"texture.cape1", 
+"texture.cape2", 
+"texture.cape3", 
+"texture.cape4", 
+"texture.cape5", 
+"texture.cape6", 
+"texture.cape7", 
+"texture.cape8", 
+"texture.cape9", 
+"texture.cape10", 
+"texture.cape11", 
+"texture.cape12", 
+"texture.cape13"
+] 
+} 
+}, 
+"geometry": "Geometry.cape", 
+"materials": [ { "*": "Material.cape" } ], 
+"textures": [ "array.capes[(query.anim_time * 10)]" ], 
+"part_visibility": [ 
+{ "cape": "(query.armor_texture_slot(1) != 5)" } 
+] 
+} 
+} 
+}

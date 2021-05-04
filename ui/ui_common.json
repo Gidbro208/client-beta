@@ -1,0 +1,63 @@
+/* -------------------------------------------
+| @ChixutyDevStuff. All rights reserved.     |
+| You are not allowed to use or modify this  |
+| file without owner permission              |
+---------------------------------------------*/
+
+{ "namespace": "common",
+
+"durability_bar": {
+
+"type": "custom",
+"renderer": "progress_bar_renderer",
+"layer": 10,
+"$durability_bar_size|default": [ 12, 1 ],
+"$durability_bar_offset|default": [ 0, 5 ],
+"offset": "$durability_bar_offset",
+"size": "$durability_bar_size",
+"property_bag": {
+"is_durability": false,
+"round_value": false
+},
+"bindings": [
+{
+"binding_name": "#item_durability_visible",
+"binding_name_override": "#progress_bar_visible",
+"binding_type": "collection",
+"binding_collection_name": "$item_collection_name"
+},
+{
+"binding_name": "#item_durability_total_amount",
+"binding_name_override": "#progress_bar_total_amount",
+"binding_type": "collection",
+"binding_collection_name": "$item_collection_name"
+},
+{
+"binding_name": "#item_durability_current_amount",
+"binding_name_override": "#progress_bar_current_amount",
+"binding_type": "collection",
+"binding_collection_name": "$item_collection_name"
+}
+]
+},
+"stack_count_label": {
+"type": "label",
+"color": "$item_stack_count_color",
+"offset": [ 0, 1 ],
+"anchor_to": "bottom_right",
+"anchor_from": "bottom_right",
+"layer": 7,
+"shadow": true,
+"$stack_count_binding_name|default": "#inventory_stack_count",
+"$stack_count_binding_condition|default": "none",
+"text": "$stack_count_binding_name",
+"bindings": [
+{
+"binding_name": "$stack_count_binding_name",
+"binding_type": "collection",
+"binding_collection_name": "$item_collection_name",
+"binding_condition": "$stack_count_binding_condition"
+}
+]
+}
+}

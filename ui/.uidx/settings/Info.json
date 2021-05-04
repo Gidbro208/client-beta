@@ -1,0 +1,460 @@
+{ "namespace":"info",
+
+"info_button@settings_common.section_toggle_base": {
+"$toggle_view_binding_name": "info_button_toggle",
+"$glyph_texture": "textures/glyphs/logo1",
+"$glyph_color_texture": "textures/glyphs/logo",
+"$glyph_size": [ 17, 17 ],
+"$button_text": "client.name",
+"$toggle_property_bag": {
+"#panel_title": "§l§aTurtle§bClient"
+}
+},
+
+"info": {
+"type": "stack_panel",
+"size": [ "100%", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"bindings": [
+{
+"binding_type": "view",
+"source_control_name": "info_button_toggle",
+"source_property_name": "#toggle_state",
+"target_property_name": "#visible"
+}
+],
+"controls": [
+{
+"header1@turtle_assets.header": {
+"$text": "§lCreator Info ",
+"font_size": "medium"
+}
+},
+{
+"creatorlabel1@settings_common.selector_group_label":{
+"text":"§lMade By : Chixuty"
+}
+},
+{
+"creatorlabel2@settings_common.selector_group_label":{
+"text":"§l§cYouTube :§r§lChixuty IUTU"
+}
+},
+{
+"creatorlabel3@settings_common.selector_group_label":{
+"text":"§l§1Twiter§f : §l@Chixuty1"
+}
+},
+{
+"creatorlabel4@settings_common.selector_group_label":{
+"text":"§l§9Discord§f : Chixuty §r#4058"
+}
+},
+{
+"dividerpanel1": {
+"type": "panel",
+"size": [ "100%", 15 ]
+}
+},
+
+{
+"header2@turtle_assets.header": {
+"$text": "§l§eCredits",
+"font_size": "medium"
+}
+},
+{
+"creditlabel1@settings_common.selector_group_label":{
+"text":"§l§aHelping Me With Armor Hud : §r§lBedezu"
+}
+},
+{
+"creditlabel2@settings_common.selector_group_label":{
+"text":"§l§cYouTube :§r§lBedezuツ"
+}
+},
+{
+"creditlabel3@settings_common.selector_group_label":{
+"text":"§l§1Twiter§f : §l@Bedecry"
+}
+},
+{
+"creditlabel4@settings_common.selector_group_label":{
+"text":"§l§9Discord§f : Bedezu §r#7899"
+}
+},
+{
+"dividerpanel2": {
+"type": "panel",
+"size": [ "100%", 15 ]
+}
+},
+{
+"creditlabel17@settings_common.selector_group_label":{
+"text":"§l The Animated TNT Was Made By Darling"
+}
+},
+{
+"creditlabel18@settings_common.selector_group_label":{
+"text":"§l§cYouTube :§r§bPiasco YT"
+}
+},
+{
+"dividerpanel4": {
+"type": "panel",
+"size": [ "100%", 5]
+}
+},
+{
+"notelabel@settings_common.selector_group_label":{
+"text":"§c**Note The Armor Hud Was Made By Me And§b Bedezu §r§cAfter 1 Month Of Work**"
+}
+},
+{
+"infolabel1@settings_common.selector_group_label":{
+"font_size":"large",
+"shadow":true,
+"anchor_from":"center",
+"anchor_to":"center",
+"text_alignment": "center",
+"text":"ccont.1"
+}
+},
+{
+"header3@turtle_assets.header": {
+"$text": "cconth.2",
+"font_size": "medium"
+}
+},
+{
+"infolabel3@settings_common.selector_group_label":{
+"text":"ccont.3"
+}
+},
+{
+"infolabel4@settings_common.selector_group_label":{
+"text":"ccont.4"
+}
+},
+{
+"infolabel5@settings_common.selector_group_label":{
+"text":"ccont.5"
+}
+},
+{
+"infolabel6@settings_common.selector_group_label":{
+"text":"ccont.6"
+}
+},
+{
+"infolabel7@settings_common.selector_group_label":{
+"text":"ccont.7"
+}
+},
+{
+"infolabel8@settings_common.selector_group_label":{
+"text":"ccont.8"
+}
+},
+{
+"infolabel9@settings_common.selector_group_label":{
+"text":"ccont.9"
+}
+},
+{
+"infolabel10@settings_common.selector_group_label":{
+"text":"ccont.10"
+}
+},
+{
+"infolabel11@settings_common.selector_group_label":{
+"text":"ccont.11"
+}
+},
+{
+"infolabel12@settings_common.selector_group_label":{
+"text":"ccont.12"
+}
+},
+{
+"infolabel13@settings_common.selector_group_label":{
+"text":"ccont.13"
+}
+},
+{
+"infolabel14@settings_common.selector_group_label":{
+"text":"ccont.14"
+}
+},
+{
+"infolabel15@settings_common.selector_group_label":{
+"text":"ccont.15"
+}
+},
+{
+"infolabel16@settings_common.selector_group_label":{
+"text":"ccont.16"
+}
+},
+{
+"infolabel17@settings_common.selector_group_label":{
+"text":"ccont.17"
+}
+},
+{
+"infolabel18@settings_common.selector_group_label":{
+"text":"ccont.18"
+}
+},
+{
+"infolabel19@settings_common.selector_group_label":{
+"text":"ccont.19"
+}
+},
+{
+"infolabel20@settings_common.selector_group_label":{
+"text":"ccont.20"
+}
+},
+{
+"infolabel21@settings_common.selector_group_label":{
+"text":"ccont.21"
+}
+},
+{
+"infolabel22@settings_common.selector_group_label":{
+"text":"ccont.22"
+}
+},
+{
+"infolabel23@settings_common.selector_group_label":{
+"text":"ccont.23"
+}
+},
+{
+"infolabel24@settings_common.selector_group_label":{
+"text":"ccont.24"
+}
+},
+{
+"infolabel25@settings_common.selector_group_label":{
+"text":"ccont.25"
+}
+},
+{
+"infolabel26@settings_common.selector_group_label":{
+"text":"ccont.26"
+}
+},
+{
+"infolabel27@settings_common.selector_group_label":{
+"text":"ccont.27"
+}
+},
+{
+"infolabel28@settings_common.selector_group_label":{
+"text":"ccont.28"
+}
+},
+{
+"infolabel29@settings_common.selector_group_label":{
+"text":"ccont.29"
+}
+},
+{
+"infolabel30@settings_common.selector_group_label":{
+"text":"ccont.30"
+}
+},
+{
+"header4@turtle_assets.header": {
+"$text": "cconth.31",
+"font_size": "medium"
+}
+},
+{
+"infolabel32@settings_common.selector_group_label":{
+"text":"ccont.32"
+}
+},
+{
+"infolabel33@settings_common.selector_group_label":{
+"text":"ccont.33"
+}
+},
+{
+"infolabel34@settings_common.selector_group_label":{
+"text":"ccont.34"
+}
+},
+{
+"infolabel35@settings_common.selector_group_label":{
+"text":"ccont.35"
+}
+},
+{
+"infolabel36@settings_common.selector_group_label":{
+"text":"ccont.36"
+}
+},
+{
+"infolabel37@settings_common.selector_group_label":{
+"text":"ccont.37"
+}
+},
+{
+"infolabel38@settings_common.selector_group_label":{
+"text":"ccont.38"
+}
+},
+{
+"infolabel39@settings_common.selector_group_label":{
+"text":"ccont.39"
+}
+},
+{
+"infolabel40@settings_common.selector_group_label":{
+"text":"ccont.40"
+}
+},
+{
+"infolabel41@settings_common.selector_group_label":{
+"text":"ccont.41"
+}
+},
+{
+"infolabel42@settings_common.selector_group_label":{
+"text":"ccont.42"
+}
+},
+{
+"header5@turtle_assets.header": {
+"$text": "cconth.43",
+"font_size": "medium"
+}
+},
+{
+"infolabel43@settings_common.selector_group_label":{
+"text":"ccont.43"
+}
+},
+{
+"infolabel44@settings_common.selector_group_label":{
+"text":"ccont.44"
+}
+},
+{
+"infolabel45@settings_common.selector_group_label":{
+"text":"ccont.45"
+}
+},
+{
+"infolabel46@settings_common.selector_group_label":{
+"text":"ccont.46"
+}
+},
+{
+"infolabel47@settings_common.selector_group_label":{
+"text":"ccont.47"
+}
+},
+{
+"infolabel48@settings_common.selector_group_label":{
+"text":"ccont.48"
+}
+},
+{
+"infolabel49@settings_common.selector_group_label":{
+"text":"ccont.49"
+}
+},
+{
+"infolabel50@settings_common.selector_group_label":{
+"text":"ccont.50"
+}
+},
+{
+"infolabel51@settings_common.selector_group_label":{
+"text":"ccont.51"
+}
+},
+{
+"infolabel52@settings_common.selector_group_label":{
+"text":"ccont.52"
+}
+},
+{
+"infolabel53@settings_common.selector_group_label":{
+"text":"ccont.53"
+}
+},
+{
+"infolabel54@settings_common.selector_group_label":{
+"text":"ccont.54"
+}
+},
+{
+"infolabel55@settings_common.selector_group_label":{
+"text":"ccont.55"
+}
+},
+{
+"infolabel56@settings_common.selector_group_label":{
+"text":"ccont.56"
+}
+},
+{
+"infolabel57@settings_common.selector_group_label":{
+"text":"ccont.57"
+}
+},
+{
+"infolabel58@settings_common.selector_group_label":{
+"text":"ccont.58"
+}
+},
+{
+"header6@turtle_assets.header": {
+"$text": "cconth.59",
+"font_size": "medium"
+}
+},
+{
+"infolabel60@settings_common.selector_group_label":{
+"text":"ccont.60"
+}
+},
+{
+"infolabel61@settings_common.selector_group_label":{
+"text":"ccont.61"
+}
+},
+{
+"infolabel62@settings_common.selector_group_label":{
+"text":"ccont.62"
+}
+},
+{
+"infolabel63@settings_common.selector_group_label":{
+"text":"ccont.63"
+}
+},
+{
+"infolabel64@settings_common.selector_group_label":{
+"text":"ccont.64"
+}
+},
+{
+"infolabel65@settings_common.selector_group_label":{
+"text":"ccont.65"
+}
+},
+{
+"infolabel66@settings_common.selector_group_label":{
+"text":"ccont.66"
+}
+}
+]
+}
+}

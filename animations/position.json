@@ -1,0 +1,50 @@
+
+{ 
+"format_version": "1.8.0", 
+"animations": { 
+"animation.armor_hud.helmet": {
+"loop": true, 
+"bones": { 
+"casco_bone": { 
+"position": [ 0,476, 0 ],
+"scale":0.8
+} 
+} 
+}, 
+"animation.armor_hud.chestplate": { 
+"loop": true, 
+"bones": { 
+"camisa_bone": { 
+"position": [0, 464, 0 ],
+"scale":0.8
+} 
+} 
+}, 
+"animation.armor_hud.leggings": { 
+"loop": true, 
+"bones": { 
+"pantalones_bone": { 
+"position": [ 0,452, 0 ],
+"scale":0.9
+} 
+} 
+}, 
+"animation.armor_hud.boots": {
+"loop": true, 
+"bones": { 
+"botas_bone": { 
+"position": [ 0,440, 0 ],
+"scale":0.8
+} 
+} 
+},
+"animation.status_hud.status": {
+"loop": true, 
+"bones": { 
+"status_bone": { 
+"position": [ 30,500, 0 ]
+} 
+} 
+}
+}
+}

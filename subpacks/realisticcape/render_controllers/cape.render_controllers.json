@@ -1,0 +1,21 @@
+{
+"format_version": "1.8.0",
+"render_controllers": {
+"controller.render.cape": {
+"geometry": "Geometry.cape",
+"materials": [ { "*": "Material.default" } ],
+"textures": [ "Texture.cape" ],
+"part_visibility": [ 
+{ "cape": "(query.armor_texture_slot(1) != 5)" },
+{ "cape1": "(query.armor_texture_slot(1) != 5)" } ,
+{ "cape2": "(query.armor_texture_slot(1) != 5)" },
+{ "cape3": "(query.armor_texture_slot(1) != 5)" },
+{ "cape4": "(query.armor_texture_slot(1) != 5)" },
+{ "cape5": "(query.armor_texture_slot(1) != 5)" },
+{ "cape6": "(query.armor_texture_slot(1) != 5)" },
+{ "cape7": "(query.armor_texture_slot(1) != 5)" },
+{ "cape8": "(query.armor_texture_slot(1) != 5)" } 
+] 
+}
+}
+}

@@ -1,0 +1,97 @@
+{ "namespace":"mods",
+
+
+"mods_button@settings_common.section_toggle_base": {
+"$toggle_view_binding_name": "automation_button_toggle",
+"$glyph_texture": "textures/ui/automation_glyph",
+"$glyph_color_texture": "textures/ui/automation_glyph_color",
+"$glyph_size": [ 15, 15 ],
+"$button_text": "mods.section",
+"$toggle_property_bag": {
+"#panel_title": "mods.section"
+}
+},
+"mods_section": {
+"type": "stack_panel",
+"size": [ "100%", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"bindings": [
+{
+"binding_type": "view",
+"source_control_name": "automation_button_toggle",
+"source_property_name": "#toggle_state",
+"target_property_name": "#visible"
+}
+],
+"controls": [
+{ 
+"togglecrouchcontroller@settings_common.option_toggle": { 
+"$option_label": "§lToggle Crouch For Controller", 
+"$option_binding_name": "#controller_toggle_crouch", 
+"$option_enabled_binding_name": "#controller_toggle_crouch_enabled", 
+"$toggle_name": "controller_toggle_crouch", 
+"$focus_override_right": "FOCUS_OVERRIDE_STOP" 
+} 
+},
+{ 
+"keyboardtogglecrouch@settings_common.option_toggle": { 
+"$option_label": "§lToggle Crouch For Pc", 
+"$option_binding_name": "#keyboard_mouse_toggle_crouch", 
+"$option_enabled_binding_name": "#keyboard_mouse_toggle_crouch_enabled", 
+"$toggle_name": "keyboard_mouse_toggle_crouch" 
+} 
+},
+{
+"toggle_armor_hud@settings_common.option_toggle": {
+"$option_label": "options.hidepaperdoll",
+"$option_binding_name": "#hide_paperdoll",
+"$option_enabled_binding_name": "#hide_paperdoll_enabled",
+"$toggle_name": "hide_paperdoll"
+}
+},
+{
+"section_divider_0": {
+"type": "image",
+"size": [ "100%", 2 ],
+"anchor_from": "left",
+"anchor_to": "left",
+"layer": 3,
+"texture": "textures/ui/list_item_divider_line_light"
+}
+},
+{
+"spacer_0": {
+"type": "panel", 
+"size": [ 2, 10] 
+} 
+}, 
+{
+"modlabel_0@settings_common.selector_group_label":{
+"text":"mod.label0"
+}
+},
+{
+"modlabel_1@settings_common.selector_group_label":{
+"text":"mod.label1"
+}
+},
+{
+"spacer_1": {
+"type": "panel", 
+"size": [ 2,5] 
+} 
+}, 
+{
+"modlabel_2@settings_common.selector_group_label":{
+"text":"mod.label2"
+}
+},
+{
+"modlabel_3@settings_common.selector_group_label":{
+"text":"mod.label3"
+}
+}
+]
+}
+}

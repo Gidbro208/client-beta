@@ -1,0 +1,7 @@
+{
+  "biomes": {
+    "default": {
+      "fog_identifier": "fog:one_chunk"
+    }
+    }
+  }

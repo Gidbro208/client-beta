@@ -1,0 +1,11 @@
+/* -------------------------------------------
+|  @ChixutyDevStuff. All rights reserved.     |
+|  You are not allowed to use or modify this  |
+|  file without owner permission              |
+---------------------------------------------*/
+
+{
+"start_screen@common.base_screen": {
+"$screen_content": "start_uidx_screen.content"
+}
+}

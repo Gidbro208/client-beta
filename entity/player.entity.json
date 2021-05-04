@@ -1,0 +1,309 @@
+
+
+{ 
+"format_version": "1.10.0", 
+"minecraft:client_entity": { 
+"description": { 
+"identifier": "minecraft:player", 
+"materials": { 
+"default":"entity_alphatest",
+"cape": "entity_alphatest", 
+"animated": "player_animated",
+
+
+"xray": "entity_turtle"
+
+}, 
+"textures": {
+"default": "textures/entity/steve",
+"cape": "textures/cosmetics/cape",
+
+
+"none":"textures/ui/clear",
+"custom":"textures/cosmetics/custom",
+
+"empty_helmet": "textures/ui/empty_armor_slot_helmet",
+"empty_chestplate": "textures/ui/empty_armor_slot_chestplate",
+"empty_leggings": "textures/ui/empty_armor_slot_leggings",
+"empty_boots": "textures/ui/empty_armor_slot_boots",
+
+"leather_helmet": "textures/items/leather_helmet", 
+"leather_chestplate": "textures/items/leather_chestplate", 
+"leather_leggings": "textures/items/leather_leggings", 
+"leather_boots": "textures/items/leather_boots", 
+
+"chainmail_helmet": "textures/items/chainmail_helmet", 
+"chainmail_chestplate": "textures/items/chainmail_chestplate", 
+"chainmail_leggings": "textures/items/chainmail_leggings", 
+"chainmail_boots": "textures/items/chainmail_boots",
+
+"iron_helmet": "textures/items/iron_helmet", 
+"iron_chestplate": "textures/items/iron_chestplate", 
+"iron_leggings": "textures/items/iron_leggings", 
+"iron_boots": "textures/items/iron_boots", 
+
+"gold_helmet": "textures/items/gold_helmet", 
+"gold_chestplate": "textures/items/gold_chestplate", 
+"gold_leggings": "textures/items/gold_leggings", 
+"gold_boots": "textures/items/gold_boots", 
+
+"diamond_helmet": "textures/items/diamond_helmet", 
+"diamond_chestplate": "textures/items/diamond_chestplate", 
+"diamond_leggings": "textures/items/diamond_leggings", 
+"diamond_boots": "textures/items/diamond_boots", 
+
+"netherite_helmet": "textures/items/netherite_helmet", 
+"netherite_chestplate": "textures/items/netherite_chestplate", 
+"netherite_leggings": "textures/items/netherite_leggings", 
+"netherite_boots": "textures/items/netherite_boots", 
+
+"elytra": "textures/items/elytra", 
+"turtle_helmet": "textures/items/turtle_helmet",
+
+"sneak":"textures/uidx/sneak"
+
+
+}, 
+"geometry": { 
+"default": "geometry.humanoid.custom", 
+"cape": "geometry.cape",
+
+
+"custom":"geometry.custom",
+"casco_geo": "geometry.casco_modelo", 
+"camisa_geo": "geometry.camisa_modelo", 
+"pantalones_geo": "geometry.pantalones_modelo", 
+"botas_geo": "geometry.botas_modelo",
+"status_geo":"geometry.status_modelo"
+}, 
+
+"particle_effects": {
+"weypoint": "turtle:weypoint"
+},
+
+"scripts": {
+"scale": "0.9375", 
+"initialize": [ 
+"variable.is_holding_right = 0.0;", 
+"variable.is_blinking = 0.0;", 
+"variable.last_blink_time = 0.0;", 
+"variable.hand_bob = 0.0;", 
+"variable.damage = 0.0;", 
+"variable.fire_damage = 0.0;"
+], 
+
+"pre_animation": [ 
+"variable.helmet_layer_visible = 1.0;", 
+"variable.leg_layer_visible = 1.0;", 
+"variable.boot_layer_visible = 1.0;", 
+"variable.chest_layer_visible = 1.0;", 
+"variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;", 
+"variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;", 
+"variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);", 
+"variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;", 
+"variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);", 
+"variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+], 
+
+"animate": [ 
+"root", 
+
+
+"turtle_boots", 
+"turtle_leggings", 
+"turtle_chestplate", 
+"turtle_helmet",
+"weypoint",
+"status",
+{ 
+"turtle_render": "query.is_in_ui" 
+}
+]
+}, 
+
+"animations": {
+    
+"status":"animation.status_hud.status",
+
+"weypoint": "controller.animation.weypoint",
+"turtle_boots": "animation.armor_hud.boots", 
+"turtle_leggings": "animation.armor_hud.leggings", 
+"turtle_chestplate": "animation.armor_hud.chestplate", 
+"turtle_helmet": "animation.armor_hud.helmet",
+
+
+
+"reset_damage": "animation.player.reset_damage", 
+"reset_fire_damage": "animation.player.reset_fire_damage", 
+"root": "controller.animation.player.root", 
+"base_controller": "controller.animation.player.base", 
+"hudplayer": "controller.animation.player.hudplayer", 
+"humanoid_base_pose": "animation.humanoid.base_pose", 
+"look_at_target": "controller.animation.humanoid.look_at_target", 
+"look_at_target_ui": "animation.player.look_at_target.ui", 
+"look_at_target_default": "animation.humanoid.look_at_target.default", 
+"look_at_target_gliding": "animation.humanoid.look_at_target.gliding", 
+"look_at_target_swimming": "animation.humanoid.look_at_target.swimming", 
+"look_at_target_inverted": "animation.player.look_at_target.inverted", 
+"cape": "animation.player.cape", 
+"move.arms": "animation.player.move.arms", 
+"move.legs": "animation.player.move.legs", 
+"swimming": "animation.player.swim", 
+"swimming.legs": "animation.player.swim.legs", 
+"riding.arms": "animation.player.riding.arms", 
+"riding.legs": "animation.player.riding.legs", 
+"holding": "animation.player.holding", 
+"brandish_spear": "animation.humanoid.brandish_spear", 
+"charging": "animation.humanoid.charging", 
+"attack.positions": "animation.player.attack.positions", 
+"attack.rotations": "animation.player.attack.rotations", 
+"sneaking": "animation.player.sneaking", 
+"bob": "animation.player.bob", 
+"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs", 
+"fishing_rod": "animation.humanoid.fishing_rod", 
+"use_item_progress": "animation.humanoid.use_item_progress", 
+"skeleton_attack": "animation.skeleton.attack", 
+"sleeping": "animation.player.sleeping", 
+"first_person_base_pose": "animation.player.first_person.base_pose", 
+"first_person_empty_hand": "animation.player.first_person.empty_hand", 
+"first_person_swap_item": "animation.player.first_person.swap_item", 
+"first_person_attack_controller": "controller.animation.player.first_person_attack", 
+"first_person_attack_rotation": "animation.player.first_person.attack_rotation", 
+"first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation", 
+"first_person_map_controller": "controller.animation.player.first_person_map", 
+"first_person_map_hold": "animation.player.first_person.map_hold", 
+"first_person_map_hold_attack": "animation.player.first_person.map_hold_attack", 
+"first_person_map_hold_off_hand": "animation.player.first_person.map_hold_off_hand", 
+"first_person_map_hold_main_hand": "animation.player.first_person.map_hold_main_hand", 
+"first_person_crossbow_equipped": "animation.player.first_person.crossbow_equipped", 
+"third_person_crossbow_equipped": "animation.player.crossbow_equipped", 
+"third_person_bow_equipped": "animation.player.bow_equipped", 
+"crossbow_hold": "animation.player.crossbow_hold", 
+"crossbow_controller": "controller.animation.player.crossbow", 
+"shield_block_main_hand": "animation.player.shield_block_main_hand", 
+"shield_block_off_hand": "animation.player.shield_block_off_hand", 
+"blink": "controller.animation.persona.blink" 
+}, 
+"render_controllers": [ 
+    { 
+"controller.render.status.sneak": "query.is_sneaking" 
+},
+
+{
+"controller.render.empty_helmet": "query.has_armor_slot(0) == 0"
+},
+{
+"controller.render.empty_chestplate": "query.has_armor_slot(1) == 0"
+},
+{ 
+"controller.render.empty_leggings": "query.has_armor_slot(2) == 0" 
+},
+{
+"controller.render.empty_boots": "query.has_armor_slot(3) == 0" 
+},
+{ 
+"controller.render.leather_helmet": "query.armor_material_slot(0) == 2" 
+}, 
+{ 
+"controller.render.leather_chestplate": "query.armor_material_slot(1) == 2" 
+}, 
+{ 
+"controller.render.leather_leggings": "query.armor_material_slot(2) == 2" 
+}, 
+{ 
+"controller.render.leather_boots": "query.armor_material_slot(3) == 2" 
+}, 
+//CHAINMAIL ARMOR//
+{ 
+"controller.render.chainmail_helmet": "query.armor_texture_slot(0) == 1" 
+}, 
+{ 
+"controller.render.chainmail_chestplate": "query.armor_texture_slot(1) == 1" 
+}, 
+{ 
+"controller.render.chainmail_leggings": "query.armor_texture_slot(2) == 1" 
+}, 
+{ 
+"controller.render.chainmail_boots": "query.armor_texture_slot(3) == 1" 
+}, 
+// IRON ARMOR//
+{ 
+"controller.render.iron_helmet": "query.armor_texture_slot(0) == 2" 
+}, 
+{ 
+"controller.render.iron_chestplate": "query.armor_texture_slot(1) == 2" 
+}, 
+{ 
+"controller.render.iron_leggings": "query.armor_texture_slot(2) == 2" 
+}, 
+{ 
+"controller.render.iron_boots": "query.armor_texture_slot(3) == 2" 
+}, 
+//GOLD ARMOR//
+{ 
+"controller.render.gold_helmet": "query.armor_texture_slot(0) == 4" 
+}, 
+{ 
+"controller.render.gold_chestplate": "query.armor_texture_slot(1) == 4" 
+}, 
+{ 
+"controller.render.gold_leggings": "query.armor_texture_slot(2) == 4" 
+}, 
+{ 
+"controller.render.gold_boots": "query.armor_texture_slot(3) == 4" 
+}, 
+//DIAMOND ARMOR//
+{ 
+"controller.render.diamond_helmet": "query.armor_texture_slot(0) == 3" 
+}, 
+{ 
+"controller.render.diamond_chestplate": "query.armor_texture_slot(1) == 3" 
+}, 
+{ 
+"controller.render.diamond_leggings": "query.armor_texture_slot(2) == 3" 
+}, 
+{ 
+"controller.render.diamond_boots": "query.armor_texture_slot(3) == 3" 
+}, 
+//NETHERITE ARMOR//
+{ 
+"controller.render.netherite_helmet": "query.armor_texture_slot(0) == 7" 
+}, 
+{ 
+"controller.render.netherite_chestplate": "query.armor_texture_slot(1) == 7" 
+}, 
+{ 
+"controller.render.netherite_leggings": "query.armor_texture_slot(2) == 7" 
+}, 
+{ 
+"controller.render.netherite_boots": "query.armor_texture_slot(3) == 7" 
+}, 
+//ELYTRA AND TURTLE HELMET//
+{ 
+"controller.render.elytra": "query.armor_texture_slot(1) == 5" 
+}, 
+{ 
+"controller.render.turtle_helmet": "query.armor_texture_slot(0) == 6" 
+},
+//COSMETICS//
+{
+"controller.render.cosmetic.cape": "query.owner_identifier == 'minecraft:player'"
+},
+{
+"controller.render.cosmetic.custom": "query.has_cape"
+},
+//OLD RENDER CONTROLLERS//
+{ 
+"controller.render.player.first_person": "variable.is_first_person" 
+}, 
+{ 
+"controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon" 
+}, 
+{ 
+"controller.render.player.map": "variable.map_face_icon" 
+}
+], 
+"enable_attachables": true
+} 
+} 
+}

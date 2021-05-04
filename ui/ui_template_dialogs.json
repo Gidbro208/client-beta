@@ -1,0 +1,43 @@
+/* -------------------------------------------
+| @ChixutyDevStuff. All rights reserved.     |
+| You are not allowed to use or modify this  |
+| file without owner permission              |
+---------------------------------------------*/
+
+{
+"namespace": "common_dialogs",
+
+
+"settings_panel": {
+"type": "panel",
+"anchor_from": "center",
+"anchor_to": "center",
+"$text_name|default": "",
+"$panel_indent_size|default": [ "100% - 16px", "100% - 15px" ],
+"$custom_background|default": "dialog_background_hollow_3",
+"controls": [
+{
+"common_panel@common.common_panel": {
+"$dialog_background": "$custom_background"
+}
+},
+{
+"title_label@common_dialogs.title_label": {}
+},
+{
+"panel_indent": {
+"type": "panel",
+"size": "$panel_indent_size",
+"offset": [0,3],
+"anchor_from": "top_middle",
+"anchor_to": "top_middle",
+"controls": [
+{
+"inside_header_panel@$child_control": {}
+}
+]
+}
+}
+]
+}
+}

@@ -1,0 +1,22 @@
+{
+"ui_defs": [
+"ui/.uidx/other/assets.json",
+"ui/.uidx/other/turtle_button.json",
+"ui/.uidx/other/images.json",
+
+"ui/.uidx/chest/chest_pocket.json",
+
+"ui/.uidx/start/start.json",
+"ui/.uidx/start/mainbtn.json",
+"ui/.uidx/start/base_screen.json",
+"ui/.uidx/start/exitbtn.json",
+
+"ui/.uidx/progress/progress.json",
+"ui/.uidx/progress/load.json",
+
+"ui/.uidx/settings/Video.json",
+"ui/.uidx/settings/Interface.json",
+"ui/.uidx/settings/Info.json",
+"ui/.uidx/settings/Mods.json"
+]
+}

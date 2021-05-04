@@ -1,0 +1,26 @@
+
+
+
+{
+"format_version": "1.10.0",
+"animation_controllers": {
+"controller.animation.weypoint": {
+"initial_state": "default",
+"states": {
+"default": {
+"transitions": [ { "activate":
+"variable.is_first_person && query.get_equipped_item_name == 'dirt' && query.is_sneaking && variable.attack_time/query.life_time != 0 && query.is_moving"
+}
+]
+},
+"activate": {
+"particle_effects": [ { "effect": "weypoint", "locator": "head" } ],
+"transitions": [{"default":
+"!variable.is_first_person && query.get_equipped_item_name == 'dirt' && query.is_sneaking && variable.attack_time/query.life_time != 0 && query.is_moving"
+}
+]
+}
+}
+}
+}
+}

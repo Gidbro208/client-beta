@@ -1,0 +1,13 @@
+{ 
+"format_version": "1.8.0", 
+"render_controllers": { 
+"controller.render.status.sneak": { 
+"textures": [ "Texture.sneak" ], 
+"rebuild_animation_matrices": true, 
+"geometry": "Geometry.status_geo", 
+"is_hurt_color": {},
+"on_fire_color": {},
+"materials": [ { "*": "Material.default" } ] 
+}
+} 
+}

@@ -1,0 +1,76 @@
+/* ------------------------------------------- 
+| @ChixutyDevStuff. All rights reserved. | 
+| You are not allowed to use or modify this | 
+| file without owner permission | 
+---------------------------------------------*/ 
+{ 
+"namespace": "settings_common", 
+
+"dynamic_dialog_screen@common.base_screen": { 
+"type": "screen", 
+"cache_screen": false, 
+
+"button_mappings": [ 
+{ 
+"from_button_id": "button.menu_cancel", 
+"to_button_id": "button.menu_exit", 
+"mapping_type": "global" 
+}, 
+{ 
+"from_button_id": "button.menu_tab_left", 
+"to_button_id": "button.menu_tab_left", 
+"mapping_type": "global", 
+"scope": "view" 
+}, 
+{ 
+"from_button_id": "button.menu_tab_right", 
+"to_button_id": "button.menu_tab_right", 
+"mapping_type": "global", 
+"scope": "view" 
+} 
+], 
+"$screen_content": "settings_common.main_content", 
+"$screen_bg_content": "settings_common.background", 
+"$header_safezone_control": "settings_common.clear", 
+"$header_bar_control": "settings_common.clear", 
+"$is_full_screen_layout": true
+}, 
+"background":{ 
+"texture":"textures/uidx/background" 
+}, 
+
+"main_content@common_dialogs.settings_panel": { 
+"size": [ "90%", "90%" ], 
+"offset": [ 0, 0], 
+"$child_control": "$dialog_content", 
+"$text_name": "Settings", 
+"$fill_alpha": 0 
+}, 
+
+"dialog_content": { 
+"type": "panel", 
+"anchor_from": "top_middle", 
+"anchor_to": "top_middle", 
+"controls": [ 
+{ "selector_area@settings_common.selector_area": {} }, 
+{ "content_area@settings_common.content_area": {} }, 
+{ "section_divider@settings_common.section_divider": {} }, 
+{ 
+"popup_dialog_factory": { 
+"type": "factory", 
+"control_ids": { 
+"purchase_failed": "@realms_create.popup_dialog__purchase_failed", 
+"purchase_in_progress": "@realms_create.popup_dialog__purchase_in_progress", 
+"share_by_link": "@realms_whitelist.popup_dialog__share_by_link", 
+"options_modal": "@realms_whitelist.popup_dialog__options", 
+"backups_modal": "@realms_settings.popup_dialog__backups" 
+} 
+} 
+} 
+] 
+}, 
+
+"screen_base@settings_common.dynamic_dialog_screen": { 
+"$dialog_content": "settings_common.dialog_content" 
+} 
+} 

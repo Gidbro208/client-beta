@@ -1,0 +1,18 @@
+/* -------------------------------------------
+| @ChixutyDevStuff. All rights reserved.    |
+| You are not allowed to use or modify this |
+| file without owner permission             |
+---------------------------------------------*/
+{ 
+"format_version": "1.8.0", 
+"render_controllers": { 
+"controller.render.cosmetic.custom": { 
+"textures": [ "Texture.custom" ], 
+"rebuild_animation_matrices": true, 
+"geometry": "Geometry.custom", 
+"is_hurt_color": {},
+"on_fire_color": {},
+"materials": [ { "*": "Material.default" } ] 
+}
+} 
+}

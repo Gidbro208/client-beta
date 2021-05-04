@@ -1,0 +1,84 @@
+
+{
+"namespace": "progress_uidx",
+
+
+"TextCommon": {
+"type": "label",
+"layer": 20,
+"text": "$text",
+"$text|default": "",
+"font_type": "MinecraftFive",
+"max_size": [ "100%", "100%" ],
+"anchor_from": "center", 
+"anchor_to": "center",
+"text_alignment": "center",
+"font_size": "normal",
+"font_scale_factor": 1.2
+},
+
+
+"Saving": {
+"type": "panel",
+"size": [ "100%", "100%" ],
+"anchor_from": "center", 
+"anchor_to": "center",
+"controls": [
+{
+"texture@load.save": {
+"size": [ "30%", "30%" ],
+"anchor_from": "center", 
+"anchor_to": "center",
+"layer": 15
+} 
+},
+{
+"Text@progress_uidx.TextCommon": {
+"ignored": "$SavingTextIgnored",
+"$text": "menu.saving",
+"anchor_from": "bottom_middle", 
+"anchor_to": "bottom_middle",
+"offset": [ 0, "-20%" ]
+} 
+},
+{ "popup_dialog_factory@progress.popup_dialog_factory": {} }
+]
+},
+"Loading": {
+"type": "panel",
+"size": [ "100%", "100%" ],
+"controls": [
+{
+"texture@load.load": {
+"size": [ "30%", "30%" ],
+"anchor_from": "center", 
+"anchor_to": "center",
+"layer": 15
+} 
+},
+{
+  "rotating_text": {
+    "type": "carousel_label",
+    "shadow": false,
+    "color": [ 1.0, 1.0, 1.0, 1.0 ],
+    "text": "xd",
+    "always_rotate": true,
+    "rotate_speed": 0.1,
+    "hover_color": [ 1.0, 1.0, 0.2, 1.0 ],
+    "hover_alpha": 1.0,
+    "pressed_color": [ 1.0, 1.0, 0.2, 1.0 ],
+    "pressed_alpha": 0.65
+  }
+},
+{
+"Text@progress_uidx.TextCommon": {
+"$text": "progressScreen.loading",
+"anchor_from": "bottom_middle", 
+"anchor_to": "bottom_middle",
+"offset": [ 0, "-20%" ]
+} 
+},
+{ "popup_dialog_factory@progress.popup_dialog_factory": {} }
+]
+}
+}

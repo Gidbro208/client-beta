@@ -1,0 +1,282 @@
+/* -------------------------------------------
+| @ChixutyDevStuff. All rights reserved.     |
+| You are not allowed to use or modify this  |
+| file without owner permission              |
+---------------------------------------------*/
+
+{ 
+"namespace": "turtle_assets", 
+
+
+/*--Chest Panel--*/
+"render_panel_pocket": { 
+"type": "stack_panel", 
+"anchor_to": "bottom_left", 
+"anchor_from": "bottom_left", 
+"size:": [ "100%" , "100%"],
+"offset": [ 0, 0 ], 
+"controls": [ 
+{ 
+"renderer_panel": { 
+"type": "panel", 
+"anchor_to": "bottom_left", 
+"anchor_from": "bottom_left", 
+"controls": [
+{
+"health_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.health",
+"shadow":true,
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0, 65]
+}
+},
+{
+"armor_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.armor",
+"shadow":true,
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0 , 45]
+}
+},
+{
+"hunger_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.hunger",
+"shadow":true,
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0 , 25]
+}
+},
+{
+"heart_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ -40, 75 ],
+"layer": 2,
+"renderer": "heart_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+},
+{
+"armor_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ -40, 45],
+"layer": 2,
+"renderer": "armor_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+},
+{
+"hunger_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ 40, 35],
+"layer": 2,
+"renderer": "hunger_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+}
+]
+} 
+} 
+] 
+}, 
+
+
+
+
+"render_panel": { 
+"type": "stack_panel", 
+"anchor_to": "bottom_left", 
+"anchor_from": "bottom_left", 
+"size:": [ "100%" , "100%"],
+"offset": [ 0, 0 ], 
+"controls": [ 
+{ 
+"renderer_panel": { 
+"type": "panel", 
+"anchor_to": "bottom_left", 
+"anchor_from": "bottom_left", 
+"controls": [
+{
+"health_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.health",
+"color": "$title_text_color",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0, 35]
+}
+},
+{
+"armor_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.armor",
+"color": "$title_text_color",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0 , 55]
+}
+},
+{
+"hunger_label": {
+"type": "label",
+"layer": 2,
+"text": "inventory.hunger",
+"color": "$title_text_color",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"offset": [ 0 , 75]
+}
+},
+{
+"heart_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ -40, 25 ],
+"layer": 2,
+"renderer": "heart_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+},
+{
+"armor_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ -40, 55],
+"layer": 2,
+"renderer": "armor_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+},
+{
+"hunger_renderer": {
+"type": "custom",
+"size": [ 1, 1 ],
+"offset": [ 40, 65],
+"layer": 2,
+"renderer": "hunger_renderer",
+"anchor_to": "top_middle",
+"anchor_from": "top_middle",
+"property_bag": {
+"#use_heart_offset": false
+}
+}
+}
+]
+} 
+} 
+] 
+}, 
+"player_panel": {
+"type": "panel", 
+"controls": [
+{ 
+"player_renderer_panel": { 
+"type": "panel", 
+"size": [ 35, 35 ], 
+"offset": [ -180, 40], 
+"controls": [
+{ 
+"paper_doll": { 
+"type": "custom", 
+"renderer": "live_player_renderer",
+"camera_tilt_degrees": -10,
+"starting_rotation": 30,
+"rotation": "gesture_x",
+"animation_reset_name": "screen_animation_reset", 
+"bindings": [ 
+{ 
+"binding_type": "view", 
+"source_control_name": "viewer_panel", 
+"source_property_name": "#gesture_delta_source", 
+"target_property_name": "#gesture_delta_source" 
+}, 
+{ 
+"binding_type": "view", 
+"source_control_name": "viewer_panel", 
+"source_property_name": "#gesture_mouse_delta_x", 
+"target_property_name": "#gesture_mouse_delta_x" 
+} 
+] 
+} 
+}
+]
+}
+} 
+]
+},
+"logo":{
+"type":"image",
+"texture": "textures/glyphs/logo64x32",
+"size":[ 64,32],
+"offset":["50%","10%"]
+},
+/*--End Chest Panel--*/
+/*--Settings--*/
+
+"header_background": {
+"type": "image",
+"size": [ "100%", "20px" ],
+"offset": [ 0, "-2px" ],
+"anchor_from": "bottom_middle",
+"anchor_to": "bottom_middle",
+"texture": "textures/ui/Banners",
+"controls": [
+{
+"header_label": {
+"type": "label",
+"color": "$body_text_color",
+"layer": 1,
+"anchor_from": "center",
+"anchor_to": "center",
+"text_alignment": "center",
+"max_size": [ "95%", 10 ],
+"text": "$text"
+}
+}
+]
+},
+
+"header": {
+"type": "panel",
+"size": [ "100%", "28px" ],
+"controls": [
+{
+"header@turtle_assets.header_background": {}
+}
+]
+}
+/*--Settings End--*/
+}

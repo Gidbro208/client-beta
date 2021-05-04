@@ -1,0 +1,21 @@
+
+{
+  "song1": {
+    "category": "ui",
+    "sounds": [
+      "sounds/custom/song1"
+    ]
+  },
+    "song2": {
+    "category": "ui",
+    "sounds": [
+      "sounds/custom/song2"
+    ]
+  },
+      "song3": {
+    "category": "ui",
+    "sounds": [
+      "sounds/custom/song3"
+    ]
+  }
+}
